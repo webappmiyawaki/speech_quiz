@@ -50,10 +50,10 @@ if(qre.getQuizResultError().equals("error")){
 
 					<img class="quiz_img" src="img/nobosemon_nabe.jpg">
 					<div class="quiz border_radio">
-						<input type="radio" name="ans2" value="1">　のぼせもん<br>
-						<input type="radio" name="ans2" value="2">　ノぼせもん<br>
+						<input type="radio" name="ans2" value="1">　空中ズボン<br>
+						<input type="radio" name="ans2" value="2">　だんごばーな<br>
 						<input type="radio" name="ans2" value="3">　ノボせもん<br>
-						<input type="radio" name="ans2" value="4">　ノボセもん<br>
+						<input type="radio" name="ans2" value="4">　のぼせもん<br>
 					</div>
 				</div>
 			</div>
@@ -96,17 +96,16 @@ if(qre.getQuizResultError().equals("error")){
 
 			<div class="quiz_box_main">
 				<h3 class="border_text">
-				5: Java Webアプリ開発技術者育成課担当は「古賀先生」ですが、<br>
-				「古賀先生」の下の名前は？
+				5: Java Webアプリ開発技術者育成課の担当講師は「古賀先生」ですが、<br>
+				「古賀先生」のフルネームは？
 				</h3>
 				<div class="quiz_box_sub">
-
 					<img class="quiz_img" src="img/JavaP.jpg">
 					<div class="quiz border_radio">
-						<input type="radio" name="ans5" value="1">　一郎<br>
-						<input type="radio" name="ans5" value="2">　次郎<br>
-						<input type="radio" name="ans5" value="3">　三郎<br>
-						<input type="radio" name="ans5" value="4">　四郎<br>
+						<input type="radio" name="ans5" value="1">古賀　シュウ<br>
+						<input type="radio" name="ans5" value="2">古賀　修一<br>
+						<input type="radio" name="ans5" value="3">古賀　憲太郎<br>
+						<input type="radio" name="ans5" value="4">古賀　慎也<br>
 					</div>
 				</div>
 			</div>

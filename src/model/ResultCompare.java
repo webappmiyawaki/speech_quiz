@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ResultCompare implements Serializable {
-	private int[] resultList= {1,3,4,1,1};
+	private int[] resultList= {1,3,4,1,4};
 	private boolean[] isResultList = new boolean[5];
 	public ResultCompare(Result result){
 		this.isResultList[0]=this.resultList[0]==result.getAns1()?true:false;

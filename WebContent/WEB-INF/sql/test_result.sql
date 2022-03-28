@@ -1,5 +1,7 @@
 CREATE DATABASE speech_quiz;
 
+TRUNCATE test_result;
+
 CREATE TABLE test_result(
     user_id VARCHAR(100),
     quiz_text_num INTEGER,

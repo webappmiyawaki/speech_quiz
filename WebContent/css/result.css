@@ -9,14 +9,14 @@
 }
 
 .answer{
-	background-color:grey;
-	width:200px;
+	background-color:pink;
+	width:600px;
 }
 
 .quiz_img {
 	background-color: black; vertical-align : top;
 	width: auto;
-	height: 220px;
+	height: 420px;
 	margin-left: 20px;
 	position: relative;
 	vertical-align: top;

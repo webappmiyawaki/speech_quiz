@@ -24,9 +24,9 @@ if(b)correctCounter++;
 <tr><th colspan="3">個人結果</th><th><%=correctCounter*20 %>points</th></tr>
 <tr><td>問題</td><td>正解</td><td>回答</td><td>結果</td></tr>
 <tr><td>問1</td><td>1</td><td><%=result.getAns1() %></td><td><% if(resultList[0]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
-<tr><td>問2</td><td>2</td><td><%=result.getAns2() %></td><td><% if(resultList[1]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
-<tr><td>問3</td><td>3</td><td><%=result.getAns3() %></td><td><% if(resultList[2]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
-<tr><td>問4</td><td>4</td><td><%=result.getAns4() %></td><td><% if(resultList[3]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
+<tr><td>問2</td><td>3</td><td><%=result.getAns2() %></td><td><% if(resultList[1]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
+<tr><td>問3</td><td>4</td><td><%=result.getAns3() %></td><td><% if(resultList[2]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
+<tr><td>問4</td><td>1</td><td><%=result.getAns4() %></td><td><% if(resultList[3]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
 <tr><td>問5</td><td>4</td><td><%=result.getAns5() %></td><td><% if(resultList[4]){ out.print("〇"); }else{ out.print("×"); } %></td></tr>
 </table>
 <br>
@@ -61,9 +61,10 @@ if(b)correctCounter++;
 <br>
 <div class="answer">
 問題５の解答<br>
-１．一郎
+４．古賀　慎也
 </div>
-
+<a href="/speech_quiz/QuizResultAll">全員の結果へ</a>←のリンクは３０秒ぐらい待ってから押してください<br>
+<br><br>
 </body>
 <footer>
 <br>

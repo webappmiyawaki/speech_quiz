@@ -1,4 +1,7 @@
 @charset "UTF-8";
+h1{
+	font-size:48px;
+}
 
 .canvas-container {
     position: relative;
@@ -8,9 +11,14 @@
 }
 
 .parent{
-	width:calc(100% - 40px);
+	width:600px;
 	overflow: hidden;
+	background-color:#fffafa;
 }
 .child{
 	float: left;
+}
+.child_bar{
+	background-color:#fffafa;
+	width:600px;
 }

@@ -53,6 +53,17 @@
 	</div>
 	</div>
 
+		<h2>問題毎正答率：全員</h2>
+		<div class="child_bar">
+		<canvas id="myPolarChart2"></canvas>
+		</div>
+		<br><br><br>
+		<h2>アンケート結果</h2>
+		<div class="child_bar">
+		<canvas id="ex_chart"></canvas>
+		</div>
+
+
 		<script>
 			var ctx = document.getElementById("myPieChart1");
 			var myPieChart = new Chart(ctx, {
@@ -93,7 +104,7 @@
 			var myPieChart = new Chart(ctx, {
 				type : 'pie',
 				data : {
-					labels : [ "のぼせもん", "ノぼせもん", "ノボせもん", "ノボセもん" ], //データ項目のラベル
+					labels : [ "空中ズボン", "だんごばーな", "ノボせもん", "のぼせもん" ], //データ項目のラベル
 					datasets : [ {
 						backgroundColor: [
 				            'rgba(255, 99, 132, 0.2)',
@@ -198,7 +209,7 @@
 			var myPieChart = new Chart(ctx, {
 				type : 'pie',
 				data : {
-					labels : [ "一郎", "次郎", "三郎", "四郎" ], //データ項目のラベル
+					labels : [ "古賀　シュウ", "古賀　修一", "古賀　憲太郎", "古賀　慎也" ], //データ項目のラベル
 					datasets : [ {
 						backgroundColor: [
 				            'rgba(255, 99, 132, 0.2)',
@@ -227,8 +238,7 @@
 			});
 		</script>
 
-		<h2>問題毎正答率：全員</h2>
-		<canvas id="myPolarChart2"></canvas>
+
 		<script>
 			var ctx = document.getElementById("myPolarChart2");
 			var myPolarChart = new Chart(ctx, {
@@ -253,21 +263,16 @@
 								data : [
 									<%
 									double q1total=(q1[0]/(double)Arrays.stream(q1).sum())*100;
-									double q2total=(q2[0]/(double)Arrays.stream(q2).sum())*100;
-									double q3total=(q3[0]/(double)Arrays.stream(q3).sum())*100;
+									double q2total=(q2[2]/(double)Arrays.stream(q2).sum())*100;
+									double q3total=(q3[3]/(double)Arrays.stream(q3).sum())*100;
 									double q4total=(q4[0]/(double)Arrays.stream(q4).sum())*100;
 									double q5total=(q5[0]/(double)Arrays.stream(q5).sum())*100;
-
-
 									%>
-
-
-
-								<%= q1total %>,
-										<%= q2total %>,
-										<%= q3total %>,
-										<%= q4total %>,
-										<%= q5total %>
+									<%= q1total %>,
+									<%= q2total %>,
+									<%= q3total %>,
+									<%= q4total %>,
+									<%= q5total %>
 								]
 					//グラフのデータ
 					} ]
@@ -290,8 +295,6 @@
 			});
 		</script>
 
-		<h2>アンケート結果</h2>
-		<canvas id="ex_chart"></canvas>
 
 		<script>
 		var ctx = document.getElementById('ex_chart');
@@ -333,11 +336,14 @@
 		});
 		</script>
 		<br>
-		平均点：<%= (q1total+q2total+q3total+q4total+q5total)/5 %>点
+		<br>
+		<%= String.format("クラス平均は、%.2f点",(q1total+q2total+q3total+q4total+q5total)/5) %>
+		<br><a href="quiz.jsp"> 問題ページへ戻る </a>
 </body>
 <footer>
 <br>
 スピーチ用
+
 <br>
 </footer>
 </html>
