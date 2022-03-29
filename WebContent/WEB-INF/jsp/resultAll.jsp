@@ -152,7 +152,7 @@
 				                'rgb(255, 205, 86)',
 				                'rgb(75, 192, 192)'
 				                ],borderWidth:1,
-				                <% int[] q3 = resultMap.get(1); %>
+				                <% int[] q3 = resultMap.get(3); %>
 						data : [<%= q3[0] %>, <%= q3[1] %>,<%= q3[2]%>,<%= q3[3] %>]
 					//グラフのデータ
 					} ]
@@ -190,7 +190,7 @@
 				                'rgb(255, 205, 86)',
 				                'rgb(75, 192, 192)'
 				                ],borderWidth:1,
-				                <% int[] q4 = resultMap.get(1); %>
+				                <% int[] q4 = resultMap.get(4); %>
 						data : [<%= q3[0] %>, <%= q3[1] %>,<%= q3[2]%>,<%= q3[3] %>]
 					//グラフのデータ
 					} ]
@@ -223,7 +223,7 @@
 				                'rgb(255, 205, 86)',
 				                'rgb(75, 192, 192)'
 				                ],borderWidth:1,
-				                <% int[] q5 = resultMap.get(1); %>
+				                <% int[] q5 = resultMap.get(5); %>
 						data : [<%= q3[0] %>, <%= q3[1] %>,<%= q3[2]%>,<%= q3[3] %>]
 					//グラフのデータ
 					} ]
